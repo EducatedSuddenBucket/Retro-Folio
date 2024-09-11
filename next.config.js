@@ -1,9 +1,5 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
-
-module.exports = nextConfig
-// next.config.js
-module.exports = {
+const nextConfig = {
   images: {
     remotePatterns: [
       {
@@ -14,4 +10,7 @@ module.exports = {
       },
     ],
   },
-}
+  output: 'export', // This enables static export
+};
+
+module.exports = nextConfig;
